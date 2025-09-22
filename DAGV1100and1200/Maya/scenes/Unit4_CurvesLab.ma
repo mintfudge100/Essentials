@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit4_CurvesLab.ma
-//Last modified: Sun, Sep 21, 2025 09:54:02 PM
+//Last modified: Sun, Sep 21, 2025 09:57:11 PM
 //Codeset: 1252
 requires maya "2026";
 currentUnit -l centimeter -a degree -t film;
@@ -9,11 +9,11 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "0E1BFF3D-4D2B-464C-DD0A-518B18595B92";
+fileInfo "UUID" "59ABF087-402E-E22F-25BB-6E849983C7FB";
 createNode transform -s -n "persp";
 	rename -uid "6E84E234-4A9F-4B1E-E55B-6EA04E284181";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 18.509765084532592 25.317392842898052 -0.49041845888477997 ;
+	setAttr ".t" -type "double3" 36.547261457896994 36.896997278621811 0.38273601768469889 ;
 	setAttr ".r" -type "double3" -38.138352729608549 89.400000000001683 -3.0372615078438281e-13 ;
 	setAttr ".rp" -type "double3" 3.5527136788005009e-15 0 0 ;
 	setAttr ".rpt" -type "double3" -2.9480080628513128e-15 -9.8607613152626476e-32 -3.5008721201403092e-15 ;
@@ -21,10 +21,11 @@ createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "E6D80128-4249-8FBB-3A9E-A59D474B64BD";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 29.165126905872803;
+	setAttr ".coi" 46.469487377303004;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
+	setAttr ".tp" -type "double3" 0 8.1991846411017395 2.2204460492503131e-15 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "DB5E3827-4264-5AFA-E414-27BEA3423207";
@@ -765,6 +766,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr "loft2.os" "loftedSurfaceShape2.cr";
 connectAttr "pasted__loft1.os" "|group|pasted__Leaf1|pasted__loftedSurface1|pasted__loftedSurfaceShape1.cr"
 		;
