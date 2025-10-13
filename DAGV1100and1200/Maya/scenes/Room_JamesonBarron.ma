@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Room_JamesonBarron.ma
-//Last modified: Fri, Oct 10, 2025 04:41:26 PM
+//Last modified: Mon, Oct 13, 2025 03:03:05 PM
 //Codeset: 1252
 file -rdi 1 -ns "Lamp" -rfn "LampRN" -op "v=0;" -typ "mayaAscii" "C:/Users/mintf/GitRepos/Essentials//DAGV1100and1200/Maya/scenes/Lamp.ma";
 file -rdi 1 -ns "Ceramic_Vase" -rfn "Ceramic_VaseRN" -op "v=0;" -typ "mayaAscii"
@@ -31,7 +31,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "3484E685-446F-D5CD-A935-8E807F1915E6";
+fileInfo "UUID" "86FFBC98-4E1E-C60A-B85B-0AACDBB7AA9D";
 createNode transform -s -n "persp";
 	rename -uid "DFB1B0F6-4E7F-0E55-50CD-8287FF721DEC";
 	setAttr ".v" no;
@@ -7518,15 +7518,15 @@ createNode mesh -n "Book13Shape" -p "Book13";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "persp1";
 	rename -uid "42152F6E-41E8-825B-63E5-428326A38D06";
-	setAttr ".t" -type "double3" 9.2311195399384047 8.9685989097836263 10.075081764993881 ;
-	setAttr ".r" -type "double3" -23.13835272474714 38.199999999999783 -2.0236220545269256e-15 ;
+	setAttr ".t" -type "double3" 10.018825443762843 6.7016889279878633 10.370608904074931 ;
+	setAttr ".r" -type "double3" -12.938352724748862 49.400000000000361 1.2218349302567082e-15 ;
 	setAttr ".rp" -type "double3" 2.886579864025407e-15 -1.7763568394002505e-15 0 ;
 	setAttr ".rpt" -type "double3" -4.9900717689750014e-15 2.916814484884666e-16 4.4405087796354495e-15 ;
 createNode camera -n "persp1Shape" -p "persp1";
 	rename -uid "502801E1-4A02-9246-D14C-73A9D8947C13";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 13.458615969213598;
+	setAttr ".coi" 16.68450974703326;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -7538,20 +7538,20 @@ createNode transform -n "Lamp1";
 	setAttr ".r" -type "double3" 0 35.5466389203239 0 ;
 	setAttr ".s" -type "double3" 0.42335837530046466 0.42335837530046466 0.42335837530046466 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "96BEB129-49C2-3BD9-1808-B2BAD0D3DE10";
+	rename -uid "8F5F2923-4FCE-4925-1D9A-34A710CD9B92";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "24BF19A1-4F7D-2C14-45ED-89A24B888061";
+	rename -uid "39FA6A97-447F-4B97-4CAB-9CAA5FA578B5";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "69953D95-47F6-AA9D-E78A-068A24CDA7F6";
+	rename -uid "D8E71EC5-414D-0EFF-95DA-99AE2216683C";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "34E2C24F-44F2-6298-FFF8-D8A69863139E";
+	rename -uid "3231F027-42EB-D65E-0121-3C98C1CFA28A";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "D070B3EF-46B3-9F05-3519-95BBACD0596E";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "2286E46B-496E-46E4-C17B-6880F5E0FABD";
+	rename -uid "EFC07BA8-44DA-FDC5-1FB1-00B07A96C87A";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "340EC436-423C-C4C5-3A2C-25818E5F40BA";
 	setAttr ".g" yes;
@@ -7842,13 +7842,13 @@ createNode reference -n "Ceramic_VaseRN";
 		"Ceramic_VaseRN" 6
 		2 "|Ceramic_Vase:revolvedSurface1" "translate" " -type \"double3\" -0.0074206936374539012 3.58282467863636889 -0.018491328645603211"
 		
-		2 "|Ceramic_Vase:revolvedSurface1" "rotate" " -type \"double3\" 0 -45.00000000000001421 0"
+		2 "|Ceramic_Vase:revolvedSurface1" "rotate" " -type \"double3\" 0 140.64091275982781326 0"
 		
 		2 "|Ceramic_Vase:revolvedSurface1" "scale" " -type \"double3\" 0.18109810795847334 0.18109810795847334 0.18109810795847334"
 		
 		2 "|Ceramic_Vase:sweep1" "translate" " -type \"double3\" -0.0074206936374539012 3.58282467863636889 -0.018491328645603211"
 		
-		2 "|Ceramic_Vase:sweep1" "rotate" " -type \"double3\" 0 -45.00000000000001421 0"
+		2 "|Ceramic_Vase:sweep1" "rotate" " -type \"double3\" 0 140.64091275982781326 0"
 		
 		2 "|Ceramic_Vase:sweep1" "scale" " -type \"double3\" 0.18109810795847334 0.18109810795847334 0.18109810795847334";
 	setAttr ".ptag" -type "string" "";
@@ -8005,11 +8005,11 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 4 ".u";
+	setAttr -s 5 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -s 7 ".r";
 select -ne :defaultTextureList1;
-	setAttr -s 4 ".tx";
+	setAttr -s 5 ".tx";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -8022,7 +8022,7 @@ select -ne :initialShadingGroup;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :initialMaterialInfo;
-	setAttr -s 4 ".t";
+	setAttr -s 6 ".t";
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
 	setAttr ".ren" -type "string" "arnold";
