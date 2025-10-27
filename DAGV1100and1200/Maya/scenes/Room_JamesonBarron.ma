@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Room_JamesonBarron.ma
-//Last modified: Fri, Oct 24, 2025 06:30:07 PM
+//Last modified: Mon, Oct 27, 2025 03:19:45 PM
 //Codeset: 1252
 file -rdi 1 -ns "Lamp" -rfn "LampRN" -op "v=0;" -typ "mayaAscii" "C:/Users/mintf/GitRepos/Essentials//DAGV1100and1200/Maya/scenes/Lamp.ma";
 file -rdi 1 -ns "Ceramic_Vase" -rfn "Ceramic_VaseRN" -op "v=0;" -typ "mayaAscii"
@@ -23,15 +23,15 @@ file -r -ns "Trash_Can" -dr 1 -rfn "Trash_CanRN" -op "v=0;" -typ "mayaAscii" "C:
 file -r -ns "basic_table" -dr 1 -rfn "basic_tableRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/mintf/GitRepos/Essentials//DAGV1100and1200/Maya/scenes/basic table.ma";
 requires maya "2026";
-requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiSkyDomeLight"
-		 -nodeType "aiImagerDenoiserOidn" "mtoa" "5.5.3";
+requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
+		 "mtoa" "5.5.3";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "59E54210-463C-955D-131E-239295FF4C0C";
+fileInfo "UUID" "EA98D675-4564-E5A9-16A9-408384D6C93E";
 createNode transform -s -n "persp";
 	rename -uid "DFB1B0F6-4E7F-0E55-50CD-8287FF721DEC";
 	setAttr ".v" no;
@@ -7807,15 +7807,15 @@ createNode mesh -n "Book13Shape" -p "Book13";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "persp1";
 	rename -uid "42152F6E-41E8-825B-63E5-428326A38D06";
-	setAttr ".t" -type "double3" 18.900322304243289 14.38074390439983 18.678095375956694 ;
-	setAttr ".r" -type "double3" -20.738352724747596 45.399999999998521 -2.2648585432308498e-15 ;
+	setAttr ".t" -type "double3" 20.651203908404586 15.111235670273174 16.322679837177734 ;
+	setAttr ".r" -type "double3" -21.938352724748615 50.199999999999534 0 ;
 	setAttr ".rp" -type "double3" 2.886579864025407e-15 -1.7763568394002505e-15 0 ;
 	setAttr ".rpt" -type "double3" -4.9900717689750014e-15 2.916814484884666e-16 4.4405087796354495e-15 ;
 createNode camera -n "persp1Shape" -p "persp1";
 	rename -uid "502801E1-4A02-9246-D14C-73A9D8947C13";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 37.446057273366499;
+	setAttr ".coi" 37.446057273363714;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -7826,34 +7826,21 @@ createNode transform -n "Lamp1";
 	setAttr ".t" -type "double3" -4.3855700306759182 3.6069600582122803 4 ;
 	setAttr ".r" -type "double3" 0 35.5466389203239 0 ;
 	setAttr ".s" -type "double3" 0.42335837530046466 0.42335837530046466 0.42335837530046466 ;
-createNode transform -n "aiSkyDomeLight1";
-	rename -uid "2B8B8D84-4603-318D-EFE9-D794F88946B0";
-createNode aiSkyDomeLight -n "aiSkyDomeLightShape1" -p "aiSkyDomeLight1";
-	rename -uid "BD332AF2-44B4-509E-2CBD-3E9F0303C256";
-	setAttr -k off ".v";
-	setAttr ".intensity" 10;
-createNode transform -n "spotLight1";
-	rename -uid "51E6FCAE-4ED5-80C1-A53A-37B7ABD32321";
-	setAttr ".t" -type "double3" 0 7.3039662642547825 7.7854827337947032 ;
-createNode spotLight -n "spotLightShape1" -p "spotLight1";
-	rename -uid "218FAC7F-4E11-1578-7E58-A487ADA90BB3";
-	setAttr -k off ".v";
-	setAttr ".in" 7.1794872283935547;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "84DF2E3A-44B8-791E-C026-0DAFA139A4C5";
+	rename -uid "772A97A3-4625-056D-5A87-159E54B4BC9D";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "0656408A-40A3-DFEF-C3D5-D69EA4DB3B7D";
+	rename -uid "F09A9DEA-4809-9BDF-DEB5-1E8DB160979E";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "8F542C62-42F8-701C-95D2-78A759837D1F";
+	rename -uid "13D79AE1-4270-9343-4954-3384462A5033";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "115D92E2-4B7F-22D8-B593-83868FEA160F";
+	rename -uid "BAF7BA59-47F3-35A9-CC52-EE831F260797";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "D070B3EF-46B3-9F05-3519-95BBACD0596E";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "DCF7C9BA-4D0F-FFDE-5D1A-38BA113AFFCF";
+	rename -uid "7C9A9B7A-4DD1-EB44-8FCE-6EA5C17EF89E";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "340EC436-423C-C4C5-3A2C-25818E5F40BA";
 	setAttr ".g" yes;
@@ -8461,8 +8448,6 @@ select -ne :defaultRenderUtilityList1;
 	setAttr -s 6 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -s 7 ".r";
-select -ne :lightList1;
-	setAttr -s 2 ".l";
 select -ne :defaultTextureList1;
 	setAttr -s 6 ".tx";
 select -ne :standardSurface1;
@@ -8484,8 +8469,6 @@ select -ne :defaultRenderGlobals;
 	setAttr ".dss" -type "string" "openPBR_shader1";
 select -ne :defaultResolution;
 	setAttr ".pa" 1;
-select -ne :defaultLightSet;
-	setAttr -s 2 ".dsm";
 select -ne :defaultColorMgtGlobals;
 	setAttr ".cfe" yes;
 	setAttr ".cfp" -type "string" "<MAYA_RESOURCES>/OCIO-configs/Maya2022-default/config.ocio";
@@ -8673,8 +8656,6 @@ connectAttr "polyTweak2.out" "polyMapCut1.ip";
 connectAttr "polyTweakUV1.out" "polyTweak2.ip";
 connectAttr "polyMapCut1.out" "polyTweakUV2.ip";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-connectAttr "aiSkyDomeLightShape1.ltd" ":lightList1.l" -na;
-connectAttr "spotLightShape1.ltd" ":lightList1.l" -na;
 connectAttr "FloorShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "BookshelfShape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "BookshelfShape.iog.og[1]" ":initialShadingGroup.dsm" -na;
@@ -8847,6 +8828,4 @@ connectAttr "groupId125.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId126.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId127.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId128.msg" ":initialShadingGroup.gn" -na;
-connectAttr "aiSkyDomeLight1.iog" ":defaultLightSet.dsm" -na;
-connectAttr "spotLight1.iog" ":defaultLightSet.dsm" -na;
 // End of Room_JamesonBarron.ma
