@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/My Stuff/First Scene.unity
     guid: af20be63dee61984eb23848906f5b33c
+  - enabled: 1
+    path: Assets/Scenes/My Stuff/Level 2.unity
+    guid: adcc1c27af4acd54fb9cd2b263992ffc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
